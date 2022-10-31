@@ -18,3 +18,10 @@ make_shirt(tamanho='M')
 make_shirt('I love Python', 'P')
 
 # 8.3
+def descibe_city(cidade, pais='Brasil'):
+    print(f'{cidade} está localizada no {pais}')
+
+
+descibe_city('Cariaica')
+descibe_city('Lisboa', 'Portugal')
+descibe_city('Recife')

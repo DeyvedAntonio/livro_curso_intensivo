@@ -1,6 +1,6 @@
 # Exercícios do capítulo 08
 
-# 8.1
+# 8.3
 def make_shirt(tamanho, texto):
     print(f'A frase escolhida foi: {texto} e o tamanho é {tamanho}.')
 
@@ -8,7 +8,7 @@ def make_shirt(tamanho, texto):
 make_shirt('G', 'Atividades de ramificação')
 make_shirt(texto='Não tenha pressa, mas não perca tempo', tamanho='GG')
 
-# 8.2
+# 8.4
 def make_shirt(texto='Eu amo Python', tamanho='G'):
     print(f'A frase escolhida foi: {texto} e o tamanho é {tamanho}.')
 
@@ -17,7 +17,7 @@ make_shirt()
 make_shirt(tamanho='M')
 make_shirt('I love Python', 'P')
 
-# 8.3
+# 8.5
 def descibe_city(cidade, pais='Brasil'):
     print(f'{cidade} está localizada no {pais}')
 
@@ -25,3 +25,12 @@ def descibe_city(cidade, pais='Brasil'):
 descibe_city('Cariaica')
 descibe_city('Lisboa', 'Portugal')
 descibe_city('Recife')
+
+# 8.6
+def city_country(city, country):
+    return f'{city.title()}, {country.title()}'
+
+print(city_country('santiago', 'chile'))
+print(city_country('recife', 'brasil'))
+print(city_country('lisboa', 'portugal'))
+

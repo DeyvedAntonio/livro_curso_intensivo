@@ -30,7 +30,19 @@ descibe_city('Recife')
 def city_country(city, country):
     return f'{city.title()}, {country.title()}'
 
+
 print(city_country('santiago', 'chile'))
 print(city_country('recife', 'brasil'))
 print(city_country('lisboa', 'portugal'))
 
+# 8.7
+def make_album(artist, title_album):
+    info = {'Artist': artist.title(), 'Title': title_album.title()}
+    return info
+
+
+album_0 = make_album('pitty', 'amanhã')
+album_1 = make_album('disturbed', 'atention')
+album_2 = make_album('system of down', 'system')
+
+print(album_0, '\n', album_1, '\n', album_2)

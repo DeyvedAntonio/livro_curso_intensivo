@@ -46,3 +46,16 @@ album_1 = make_album('disturbed', 'atention')
 album_2 = make_album('system of down', 'system')
 
 print(album_0, '\n', album_1, '\n', album_2)
+
+# 8.8
+artistas = {}
+while True:
+    artista = input('Informe o nome do artista (caso queira sair digite "q" a qualquer momento): ')
+    if artista == 'q':
+        break
+    album = input('Informe o título do álbum: ')
+    if album == 'q':
+        break
+    artistas = make_album(artista, album)
+
+print(f'O dicionário criado é {artistas}')

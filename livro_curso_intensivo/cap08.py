@@ -67,3 +67,11 @@ def show_magicians(magicians):
         print(magician)
 
 show_magicians(magicians)
+
+# 8.10
+def make_great(magicians):
+    for chave, magician in enumerate(magicians):
+        magicians[chave] = f'Grande {magician}'
+
+make_great(magicians)
+show_magicians(magicians)

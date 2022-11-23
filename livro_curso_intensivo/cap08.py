@@ -60,11 +60,11 @@
 # print(f'O dicionário criado é {artistas}')
 
 # 8.9
-magicians = ['David', 'Fred', 'Sarah']
+# magicians = ['David', 'Fred', 'Sarah']
 
-def show_magicians(magicians):
-    for magician in magicians:
-        print(magician)
+# def show_magicians(magicians):
+#     for magician in magicians:
+#         print(magician)
 
 # show_magicians(magicians)
 
@@ -77,12 +77,22 @@ def show_magicians(magicians):
 # show_magicians(magicians)
 
 # 8.11
-def make_great_copy(magicians):
-    for chave, magician in enumerate(magicians):
-        magicians[chave] = f'Grande {magician}'
+# def make_great_copy(magicians):
+#     for chave, magician in enumerate(magicians):
+#         magicians[chave] = f'Grande {magician}'
     
-    return magicians
+#     return magicians
 
-new_magicians = make_great_copy(magicians[:])
-show_magicians(magicians)
-show_magicians(new_magicians)
+# new_magicians = make_great_copy(magicians[:])
+# show_magicians(magicians)
+# show_magicians(new_magicians)
+
+# 8.12
+def itens_sanduba(*items):
+    print('O sanduíche é composto por:')
+    for item in items:
+        print(item)
+
+itens_sanduba('Bacon')
+itens_sanduba('Bacon', 'Queijo')
+itens_sanduba('Ovo', 'Tomate', 'Hamburguer', 'Alface')

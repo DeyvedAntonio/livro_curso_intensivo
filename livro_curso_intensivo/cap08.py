@@ -88,11 +88,22 @@
 # show_magicians(new_magicians)
 
 # 8.12
-def itens_sanduba(*items):
-    print('O sanduíche é composto por:')
-    for item in items:
-        print(item)
+# def itens_sanduba(*items):
+#     print('O sanduíche é composto por:')
+#     for item in items:
+#         print(item)
 
-itens_sanduba('Bacon')
-itens_sanduba('Bacon', 'Queijo')
-itens_sanduba('Ovo', 'Tomate', 'Hamburguer', 'Alface')
+# itens_sanduba('Bacon')
+# itens_sanduba('Bacon', 'Queijo')
+# itens_sanduba('Ovo', 'Tomate', 'Hamburguer', 'Alface')
+
+# 8.13
+def build_profile(nome, sobrenome, **outros):
+    info = {}
+    print(f'First name: {nome}')
+    print(f'Last name: {sobrenome}')
+    for key, value in outros.items():
+        info[key] = value
+    print(f'informações: {info}')
+
+build_profile('Deyved', 'Silva', location='Brasil', cidade='Cariacica')

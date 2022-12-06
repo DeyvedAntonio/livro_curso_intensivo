@@ -98,12 +98,20 @@
 # itens_sanduba('Ovo', 'Tomate', 'Hamburguer', 'Alface')
 
 # 8.13
-def build_profile(nome, sobrenome, **outros):
-    info = {}
-    print(f'First name: {nome}')
-    print(f'Last name: {sobrenome}')
-    for key, value in outros.items():
-        info[key] = value
-    print(f'informações: {info}')
+# def build_profile(nome, sobrenome, **outros):
+#     info = {}
+#     print(f'First name: {nome}')
+#     print(f'Last name: {sobrenome}')
+#     for key, value in outros.items():
+#         info[key] = value
+#     print(f'informações: {info}')
 
-build_profile('Deyved', 'Silva', location='Brasil', cidade='Cariacica')
+# build_profile('Deyved', 'Silva', location='Brasil', cidade='Cariacica')
+
+# 8.14
+def make_car(fabricante, modelo, **infos):
+    info_car = {'Fabricante': fabricante, 'Modelo': modelo, 'Informações': infos}
+    return info_car
+
+car = make_car('saburu', 'outback', color='blue', tow_package=True)
+print(car)

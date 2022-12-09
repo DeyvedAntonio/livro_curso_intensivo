@@ -40,6 +40,7 @@
 #     info = {'Artist': artist.title(), 'Title': title_album.title()}
 #     return info
 
+
 # album_0 = make_album('pitty', 'amanhã')
 # album_1 = make_album('disturbed', 'atention')
 # album_2 = make_album('system of down', 'system')
@@ -66,12 +67,14 @@
 #     for magician in magicians:
 #         print(magician)
 
+
 # show_magicians(magicians)
 
 # # 8.10
 # def make_great(magicians):
 #     for chave, magician in enumerate(magicians):
 #         magicians[chave] = f'Grande {magician}'
+
 
 # make_great(magicians)
 # show_magicians(magicians)
@@ -83,6 +86,7 @@
     
 #     return magicians
 
+
 # new_magicians = make_great_copy(magicians[:])
 # show_magicians(magicians)
 # show_magicians(new_magicians)
@@ -92,6 +96,7 @@
 #     print('O sanduíche é composto por:')
 #     for item in items:
 #         print(item)
+
 
 # itens_sanduba('Bacon')
 # itens_sanduba('Bacon', 'Queijo')
@@ -106,12 +111,14 @@
 #         info[key] = value
 #     print(f'informações: {info}')
 
+
 # build_profile('Deyved', 'Silva', location='Brasil', cidade='Cariacica')
 
 # 8.14
-def make_car(fabricante, modelo, **infos):
-    info_car = {'Fabricante': fabricante, 'Modelo': modelo, 'Informações': infos}
-    return info_car
+# def make_car(fabricante, modelo, **infos):
+#     info_car = {'Fabricante': fabricante, 'Modelo': modelo, 'Informações': infos}
+#     return info_car
 
-car = make_car('saburu', 'outback', color='blue', tow_package=True)
-print(car)
+
+# car = make_car('saburu', 'outback', color='blue', tow_package=True)
+# print(car)

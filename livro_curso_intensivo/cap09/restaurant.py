@@ -22,3 +22,11 @@ print(restaurant.cuisine_type.title())
 
 restaurant.describe_restaurant()
 restaurant.open_restaurant()
+
+restaurant_favorite = Restaurant('DIMI', 'fast food')
+restaurant_0 = Restaurant('habbi', 'fast food')
+restaurant_1 = Restaurant('rei do bolo', 'caseira')
+
+restaurant_0.describe_restaurant()
+restaurant_favorite.describe_restaurant()
+restaurant_1.describe_restaurant()

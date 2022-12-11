@@ -2,16 +2,19 @@ class Restaurant():
     """Classe criada para responder o exercício 9.1"""
     
     def __init__(self, restaurant_name, cuisine_type):
+        """Método responsável pela inicialização dos atribuitos."""
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
     
 
     def describe_restaurant(self):
+        """descrever o restaurante, informa nome e tipo de comida."""
         print(f'Restaurant name is {self.restaurant_name.title()}')
         print(f'Cuisine type is {self.cuisine_type.title()}')
 
 
     def open_restaurant(self):
+        """Informa que o restaurante está aberto."""
         print('Restaurant is open!')
 
 

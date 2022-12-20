@@ -5,6 +5,7 @@ class Restaurant():
         """Método responsável pela inicialização dos atribuitos."""
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
+        self.number_served = 0
     
 
     def describe_restaurant(self):
@@ -16,6 +17,16 @@ class Restaurant():
     def open_restaurant(self):
         """Informa que o restaurante está aberto."""
         print('Restaurant is open!')
+
+
+    def set_number_served(self, number):
+        """Permite definir o número de clientes atendidos."""
+        self.number_served = number
+
+
+    def increment_number_served(self, total):
+        """Permite incrementar o número de clientes atendidos."""
+        self.number_served += total
 
 
 restaurant = Restaurant('Bonna', 'fast food')
@@ -33,3 +44,8 @@ restaurant_1 = Restaurant('rei do bolo', 'caseira')
 restaurant_0.describe_restaurant()
 restaurant_favorite.describe_restaurant()
 restaurant_1.describe_restaurant()
+
+restaurant.set_number_served(5)
+print(restaurant.number_served)
+restaurant.increment_number_served(6)
+print(restaurant.number_served)

@@ -31,28 +31,27 @@ class User():
         self.login_attempts = 0
 
 
-user_0 = User('paulo', 'augusto', 'paulo@paulo', 'paulinho')
-user_1 = User('roberto', 'lima', 'roberto@paulo', 'tete')
-user_2 = User('sergio', 'silva', 'sergio@paulo', 'serginho')
-user_3 = User('rodolfo', 'oliveira', 'rodolfo@paulo', 'rodo')
-user_4 = User('carlos', 'nascimento', 'carlos@paulo', 'kaka')
+class Privileges():
+    """Classe de privilegios dos usuários."""
 
-user_0.describe_user()
-user_0.greet_user()
-user_1.describe_user()
-user_1.greet_user()
-user_2.describe_user()
-user_2.greet_user()
-user_3.describe_user()
-user_3.greet_user()
-user_4.describe_user()
-user_4.greet_user()
+    def __init__(self, *privileges):
+        """Inicialização de atributos da classe Privileges."""
+        self.privileges = privileges
+    
 
-user_0.increment_login_attempts()
-user_0.increment_login_attempts()
-user_0.increment_login_attempts()
-user_0.increment_login_attempts()
-user_0.increment_login_attempts()
-print(user_0.login_attempts)
-user_0.reset_login_attempts()
-print(user_0.login_attempts)
+    def show_privileges(self):
+        """Lista o conjunto de privilégios de um administrador."""
+        print(self.privileges)
+
+
+class Admin(User):
+    """Classe criada para resolver o exercício 9.7."""
+    
+    def __init__(self, first_name, last_name, email, username, *privileges):
+        """Inicializa os atributos da classe."""
+        super().__init__(first_name, last_name, email, username)
+        self.privileges = privileges
+
+    # def show_privileges(self):
+    #     """Lista o conjunto de privilégios de um administrador."""
+    #     print(self.username, self.privileges)

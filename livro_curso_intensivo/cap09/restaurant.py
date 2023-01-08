@@ -1,8 +1,10 @@
 class Restaurant():
     """Classe criada para responder o exercício 9.1"""
     
-    def __init__(self, restaurant_name, cuisine_type):
-        """Método responsável pela inicialização dos atribuitos."""
+    def __init__(self, restaurant_name: str, cuisine_type: str):
+        """Método responsável pela inicialização dos atribuitos.
+        restaurant_name: nome do restaurante;
+        cuisine_type: tipo de cozinha."""
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
         self.number_served = 0
